@@ -17,23 +17,64 @@
 body {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 header {
   max-width: 1440px;
   height: 79px;
+  margin-bottom: 15px;
 }
-
+/******** Header styles ********/
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo img {
-  width: 189.85px;
-  height: 59.05px;
+.navbar-link {
+    padding-top: 30px;  
+    margin: 0 25px 0 25px;
+    font-size: 15px
+}
+
+.navbar-link:hover {
+    color: var(--main-color); 
+    border-top: 3px solid var(--main-color); 
+}
+
+
+.navbar-link:after {
+    color: var(--main-color); 
+    border-top: 5px solid var(--main-color);
+}
+
+.logo {
+  width: 62px;
+  height: 20px;
+  margin: 30px 50px;
+
+}
+
+/*************** Research section ************/ 
+
+.info-section {
+    display: block;
+    flex-wrap: wrap;
+    width: 1340px;
+    height: 281px; 
+}
+
+.location-section {
+    display: inline;
+
+}
+
+.fa-location-dot {
+    color: #000;
 }
 
 .main-container {
