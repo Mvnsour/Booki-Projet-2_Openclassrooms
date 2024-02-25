@@ -17,23 +17,104 @@
 body {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 header {
   max-width: 1440px;
   height: 79px;
+  margin-bottom: 15px;
 }
+
+/******** Header styles ********/
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo img {
-  width: 189.85px;
-  height: 59.05px;
+.navbar-link {
+    padding-top: 30px;  
+    margin: 0 25px 0 25px;
+    font-size: 15px
+}
+
+.navbar-link:hover {
+    color: var(--main-color); 
+    border-top: 3px solid var(--main-color); 
+}
+
+.navbar-link:after {
+    color: var(--main-color); 
+    border-top: 5px solid var(--main-color);
+}
+
+.logo {
+  width: 62px;
+  height: 20px;
+  margin: 30px 50px;
+}
+
+/*************** Research section ************/ 
+
+.info-section {
+    display: block;
+    flex-wrap: wrap;
+    width: 1340px;
+    height: 281px; 
+}
+
+.search-bar {
+    margin: 24px 0 24px 0;
+    display: flex;
+}
+
+.location-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 50px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+
+}
+
+.fa-location-dot {
+    width: 14px;
+    height: 18px;
+    color: #000;
+    margin: 50%;
+    
+}
+
+input {
+    width: 195px;
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #000;
+}
+
+button {
+    width: 132px;
+    height: 49px;
+    color: #FFF;
+    background-color: var(--main-color);
+    border-radius: 0 15px 15px 0;
+    text-align: center;    
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .main-container {

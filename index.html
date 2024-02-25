@@ -24,16 +24,27 @@
       <!-- Navbar section -->
       <header>
         <nav class="navbar">
-          <div class="logo">
-            <img src="images/logo/Booki@3x.png" alt="Logo Booki" >
-          </div>
-          <ul>
-            <li><a href="#hebergements">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
-          </ul>
+            <img src="images/logo/Booki@3x.png" alt="Logo Booki" class="logo">       
+            <div>
+            <a href="#hebergements" class="navbar-link">Hébergements</a>
+            <a href="#" class="navbar-link">Activités</a>
+            </div>
         </nav>
       </header>
       <main>
+        <section class="info-section">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre-ville ou en pleine nature</p>
+            <form action="" method="post">  
+            <div class="search-bar">  
+            <div class="location-section">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <input type="search" name="research" id="research" placeholder="Marseille, France">
+            <button type="button">Rechercher</button>
+            </div>
+            </form>
+        </section>
         <div class="hebergements-and-populaires">
           <section class="hebergements" id="hebergements"></section>
           <section class="populaires">
