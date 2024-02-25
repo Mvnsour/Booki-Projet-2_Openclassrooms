@@ -61,7 +61,7 @@ header {
 
 /*************** Research section ************/ 
 
-.info-section {
+.info {
     display: block;
     flex-wrap: wrap;
     width: 1340px;
@@ -115,6 +115,25 @@ button {
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+}
+
+/*************** Filtres ****************/
+
+.filter-bar {
+width: 758px;
+height: 50px;
+display: flex;
+align-content: center;
+justify-content: space-around;
+font-weight: bold;
+}
+
+.filter {
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+    border: 1px solid #D9D9D9;
+
 }
 
 .main-container {
