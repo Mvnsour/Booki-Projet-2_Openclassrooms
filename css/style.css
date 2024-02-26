@@ -39,24 +39,20 @@ header {
 
 .navbar-link {
     padding-top: 30px;  
-    margin: 0 25px 0 25px;
+    margin: 0 25px;
     font-size: 15px
 }
 
 .navbar-link:hover {
     color: var(--main-color); 
     border-top: 3px solid var(--main-color); 
-}
-
-.navbar-link:after {
-    color: var(--main-color); 
-    border-top: 5px solid var(--main-color);
+    border-width: 36px;
 }
 
 .logo {
   width: 62px;
   height: 20px;
-  margin: 30px 50px;
+  margin: 29px 0;
 }
 
 /*************** Research section ************/ 
@@ -69,7 +65,7 @@ header {
 }
 
 .search-bar {
-    margin: 24px 0 24px 0;
+    margin: 24px 0;
     display: flex;
 }
 
@@ -78,7 +74,7 @@ header {
     justify-content: center;
     align-items: center;
     width: 49px;
-    height: 50px;
+    height: 49px;
     background-color: #F2F2F2;
     border-radius: 15px 0 0 15px;
 
@@ -89,7 +85,6 @@ header {
     height: 18px;
     color: #000;
     margin: 50%;
-    
 }
 
 input {
@@ -102,6 +97,7 @@ input {
 
 input::placeholder {
     color: #000;
+    padding: 15px 20px 15px 16px;
 }
 
 button {
@@ -123,17 +119,40 @@ button {
 width: 758px;
 height: 50px;
 display: flex;
-align-content: center;
-justify-content: space-around;
+align-items: center;
+justify-content: space-between;
 font-weight: bold;
+margin: 15px 0;
 }
 
 .filter {
+    align-items: center;
     width: auto;
-    height: auto;
+    max-height: 50px;
+    padding: 4px 19px;
     border-radius: 25px;
-    border: 1px solid #D9D9D9;
+    border: 2px solid #D9D9D9;
+    padding: 12px 19px;
+}
 
+.icon-filter {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+.filter:hover {
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+/****************** Info ********************/
+.fa-info {
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
 }
 
 .main-container {
