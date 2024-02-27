@@ -27,7 +27,7 @@ header {
   margin-bottom: 15px;
 }
 
-/******** Header styles ********/
+/******** Header styles and navigation links w********/
 
 .navbar {
   display: flex;
@@ -55,7 +55,7 @@ header {
   margin: 29px 0;
 }
 
-/*************** Research section ************/ 
+/*************** Research section and input ************/ 
 
 .info {
     display: block;
@@ -75,9 +75,8 @@ header {
     align-items: center;
     width: 49px;
     height: 49px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
-
 }
 
 .fa-location-dot {
@@ -90,7 +89,7 @@ header {
 input {
     width: 195px;
     height: 49px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--main-bg-color);
     font-size: 18px;
     font-weight: bold;
 }
@@ -147,12 +146,28 @@ margin: 15px 0;
 }
 
 /****************** Info ********************/
-.fa-info {
-    text-align: center;
+
+.info-bar {
+    width: 1340px;
+    height: 24px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-info-container {
     width: 24px;
     height: 24px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.fa-info {
+    top: 7px;
+    left: 10px;
+    font-size: 11px;
 }
 
 .main-container {
