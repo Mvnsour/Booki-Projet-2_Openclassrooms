@@ -35,19 +35,25 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
 }
 
 .navbar-link {
-    display: inline-block;
-    box-sizing: border-box;
-    max-height: 48px;
     margin: 0 25px;
     font-size: 15px;
-    border-top: 3px solid transparent;
-    padding-top: 20px;
 }
 
-.navbar-link:hover {
+li a {
+    padding-top: 27px;
+    border-top: 3px solid transparent;
+}
+
+li a:hover {
     color: var(--main-color); 
     border-top: 3px solid var(--main-color); 
 }
@@ -62,9 +68,11 @@ header {
 
 .info {
     display: block;
-    flex-wrap: wrap;
-    width: 1340px;
     height: 281px; 
+}
+
+.info h1 {
+    margin-bottom: 10px
 }
 
 .search-bar {
@@ -152,7 +160,6 @@ margin: 15px 0;
 /****************** Info ********************/
 
 .info-bar {
-    width: 1340px;
     height: 24px;
     margin-top: 10px;
     display: flex;
@@ -197,6 +204,10 @@ a {
   padding: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} 
 
 .card img {
   object-fit: cover;
@@ -263,7 +274,7 @@ a {
     border-top-right-radius: 20px;
   }
 
-  .hebergements-cards .card-content {
+.hebergements-cards .card-content {
     width: 100%;
     padding-left: 15px;
     display: flex;
@@ -272,18 +283,23 @@ a {
     box-sizing: border-box;
   }
 
-  .hebergements-cards .card-title {
+.hebergements-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
   }
   
-  .hebergemebts-cards .card-subtitle {
+.hebergemebts-cards .card-subtitle {
     margin: 0;
   }
   
-  .hebergemebts-cards .card-rating {
+.hebergemebts-cards .card-rating {
     margin-bottom: 5px;
   }
+
+.display-more {
+    display: flex;
+    align-items: flex-end;
+}
 
 /****** Populaires ***********/
 
@@ -361,6 +377,8 @@ a {
     display: flex;
     margin-top: 33px;
     flex-direction: column;
+    border-radius: 20px 19px 20px 19px;
+    padding: 0;
 }
   
 .activities-cards-container .card .card-content {
@@ -378,6 +396,7 @@ a {
     height: 380px;
     object-fit: cover;
     width: 100%;
+    border-radius: 20px 20px 0 0;
 }
 
 /******************** Footer section ************************/
@@ -386,24 +405,36 @@ a {
     height: 163px;
     width: 100%;
     display: flex;
+    align-items: flex-start;
     background-color: #F2F2F2;
- }
+}
 
 .footer-bloc {
     display: flex;
     width: 33%;
     flex-direction: column;
     padding: 20px;
-    justify-content: space-around;
-    align-content: center;
+    justify-content: space-between;
 }
 
+.footer-bloc a{
+    display: inline-block;
+    width: fit-content;
+}
+
+.footer-bloc a:hover {
+    text-decoration: underline;
+}
+
+.footer-title, .footer-bloc p {
+    padding-bottom: 10px;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .hebergements-and-populaires {
     flex-direction: column;
   }
