@@ -261,11 +261,12 @@
       flex-wrap: wrap;
       justify-content: space-between;
       box-sizing: border-box;
+      gap: 30px;
   }
   
-  .hebergemebts-cards a {
+  .hebergements-cards a {
       display: block;
-      width:30%
+      width:30%;
   }
   
   .hebergements-cards img {
@@ -289,7 +290,7 @@
       margin-bottom: 4px;
   }
     
-  .hebergemebts-cards .card-rating {
+  .hebergements-cards .card-rating {
       margin-bottom: 5px;
     }
   
