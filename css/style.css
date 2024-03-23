@@ -620,6 +620,7 @@ button {
 .filter-bar {
     width: 100%;
     flex-wrap: wrap;
+    margin: 0 15px;
     }
 
 .filter-title {
