@@ -575,7 +575,6 @@ li {
 li:hover {
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color); 
-    border-width: 10%;
     }
 
 li a:hover {
