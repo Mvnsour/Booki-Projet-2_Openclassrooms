@@ -178,7 +178,7 @@ span .button-2 {
   width: 758px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-weight: bold;
   }
 
@@ -189,6 +189,10 @@ span .button-2 {
       border-radius: 25px;
       border: 2px solid #D9D9D9;
       padding: 12px 19px;
+  }
+
+.filter-title {
+     margin-right: 15px;
   }
   
   .filter-container {
@@ -482,6 +486,7 @@ span .button-2 {
     flex-wrap: wrap;
     width: 668px;
     height: 91px;
+    justify-content: flex-start;
     }  
 
 .filter-title {
@@ -585,6 +590,7 @@ li a:hover {
     text-align: center;
     width: 100%;
     margin: 0;
+    padding-bottom: 15px;
 }
 
 .info {
@@ -594,9 +600,25 @@ li a:hover {
     padding: 8px;
     }
 
+.info h1 {
+    margin: 10px 30px;
+    font-size: 24px;
+    }
+
+.first-paragraph {
+    margin: 10px 30px;
+    } 
+
+.search-bar {
+    justify-content: center;
+    margin-left: 30px;
+}
+
+
 input {
- width: 237px; 
+ width: 83%; 
  border-radius: 0 15px 15px 0;
+ padding-left: 0%;
     }
 
 button {
@@ -628,10 +650,15 @@ button {
 }
 
 .filter {
-    width: 122px;
+    width: 37%;
     padding: 10px 14px;
-    font-size: 15px;
+    font-size: 13px;
     }
+
+.filter-container {
+    width: 95%;
+    justify-content: center;
+}
 
 .filter-bar .fa-solid {
     font-size: 15px;
@@ -639,11 +666,13 @@ button {
 
 .icon-filter {
     display: inline-block;
-    width: 21px;
+    width: 1%;
+    margin-right: 20px;
     }
 
 .info-bar {
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
     }
