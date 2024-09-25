@@ -1,5 +1,4 @@
-# booki-starter-pack
-
+# Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
 Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS.
 
