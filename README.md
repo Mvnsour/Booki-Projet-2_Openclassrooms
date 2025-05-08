@@ -1,4 +1,4 @@
-# Créez la page d'accueil d'une agence de voyage avec HTML & CSS 🇫🇷
+# FR : Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
 Dans ce projet, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS.
 
@@ -10,7 +10,7 @@ Cela m'a permis de mieux comprendre comment le code est structuré et stylisé p
 
 En travaillant sur ce projet, j'ai développé des compétences essentielles en design responsive, assurant que la page d'accueil fonctionne bien sur tous les appareils et toutes les tailles d'écran.
 
-# Create the home page of a travel agency using HTML & CSS 🇬🇧
+# EN : Create the home page of a travel agency using HTML & CSS
 
 In this project, I created the homepage of a travel agency using HTML and CSS.
 
